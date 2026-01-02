@@ -237,8 +237,8 @@ def download_excel(df: pd.DataFrame, filename: str, label: str, key: str):
 #  BAGIAN 1 — TOWER ONLINE / OFFLINE
 # ============================================================
 
-LOGIN_URL_REPORT = "http://103.176.44.189:3006/Auth/login"
-REPORT_URL_REPORT = "http://103.176.44.189:3006/Report"
+LOGIN_URL_REPORT = "http://maiviewmitratel.id/auth/login"
+REPORT_URL_REPORT = "http://maiviewmitratel.id/Report"
 
 def fetch_report_html() -> str:
     if not USERNAME or not PASSWORD:
@@ -827,3 +827,4 @@ st.markdown(
     '</div>',
     unsafe_allow_html=True,
 )
+
