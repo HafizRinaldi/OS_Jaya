@@ -238,7 +238,7 @@ def download_excel(df: pd.DataFrame, filename: str, label: str, key: str):
 # ============================================================
 
 LOGIN_URL_REPORT = "http://maiviewmitratel.id/auth/login"
-REPORT_URL_REPORT = "http://maiviewmitratel.id/get-report"
+REPORT_URL_REPORT = "https://maiviewmitratel.id/get-report"
 
 def fetch_report_html() -> str:
     if not USERNAME or not PASSWORD:
@@ -827,5 +827,6 @@ st.markdown(
     '</div>',
     unsafe_allow_html=True,
 )
+
 
 
